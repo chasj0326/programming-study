@@ -1,3 +1,4 @@
-n = int(input())
-nums = list(map(int, input().split()))
-print(min(nums), max(nums))
+nums = []
+for i in range(9):
+  nums.append(int(input()))
+print(max(nums), nums.index(max(nums)) + 1, sep='\n')
